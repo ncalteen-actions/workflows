@@ -1,3 +1,3 @@
-# Reusable Workflows
+# Workflows
 
-This repository contains various reusable workflows for calling in other repositories.
+This repository contains various workflows for calling in other repositories.
