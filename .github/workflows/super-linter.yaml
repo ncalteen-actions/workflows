@@ -1,10 +1,7 @@
 name: Super Linter
 
 on:
-  workflow_call:
-    secrets:
-      github-token:
-        required: true
+  pull_request:
 
 jobs:
   build:
@@ -27,4 +24,4 @@ jobs:
         env:
           VALIDATE_ALL_CODEBASE: false
           DEFAULT_BRANCH: main
-          GITHUB_TOKEN: ${{ secrets.github-token }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
